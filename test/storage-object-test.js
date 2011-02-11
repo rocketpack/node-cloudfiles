@@ -25,6 +25,7 @@ vows.describe('node-cloudfiles/storage-object').addBatch({
         client.addFile('test_container', 'file1.txt', path.join(__dirname, '..', 'test', 'data', 'fillerama.txt'), this.callback);
       },
       "should respond with true": function (err, uploaded) {
+        assert.isNull(err);
         assert.isTrue(uploaded);
       }
     },
@@ -33,6 +34,7 @@ vows.describe('node-cloudfiles/storage-object').addBatch({
         client.addFile('test_container', 'file2.txt', path.join(__dirname, '..', 'test', 'data', 'fillerama.txt'), this.callback);
       },
       "should respond with true": function (err, uploaded) {
+        assert.isNull(err);
         assert.isTrue(uploaded);
       }
     }

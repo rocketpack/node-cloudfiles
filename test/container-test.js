@@ -140,7 +140,7 @@ vows.describe('node-cloudfiles/containers').addBatch({
       }
     }
   }
-}).addBatch({
+})/*.addBatch({
   "The node-cloudfiles client": {
     "an instance of a Container object": {
       "the getFiles(true) method": {
@@ -222,7 +222,7 @@ vows.describe('node-cloudfiles/containers').addBatch({
       }
     }
   }
-}).addBatch({
+})*/.addBatch({
   "The node-cloudfiles client": {
     "an instance of a Container object": {
       "the removeFile() method": {
